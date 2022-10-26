@@ -1,0 +1,275 @@
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.cards {
+    max-width: 1400px;
+    /* min-height: 600px; */
+    background-color: rgba(15, 136, 35, 0.733);
+    padding: 20px;
+}
+
+.ten__body {
+    display: inline-block;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    border: 4px solid rgb(39, 38, 38);
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    position: relative;  
+}
+.cards__tens,
+.cards__tens2,
+.cards__tens3,
+.cards__tens4,
+.cards__tens5,
+.cards__tens6,
+.cards__tens7,
+.cards__tens8
+{
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    border: 4px solid rgb(247, 243, 8);
+    background-color: rgb(53, 54, 53);
+    box-shadow: 15px 15px 15px rgb(17, 17, 17);
+    position: relative;
+    margin: 25px;
+}
+.cards__tens6{
+    perspective: 600px;
+    perspective-origin: center;
+}
+
+.cards__tens8{
+    perspective: 600px;
+    perspective-origin: center;
+}
+/* ===================================} */
+
+/* ++++++++++++++++++++++++++++++++++++++ */
+.body--scale {
+    position: relative;
+    perspective: 600px;
+    perspective-origin: 0 0;
+}
+.body--translate {
+    position: relative;
+    z-index: 1;
+    perspective: 400px;
+    perspective-origin: 0 0;
+}
+.body--skew {
+
+    position: relative;
+    z-index: 1;
+}
+.body--rotate {
+    position: relative;
+    z-index: 1;
+    perspective: 400px;
+    perspective-origin: 0 0;
+}
+.body--transform-origin {
+    position: relative;
+    z-index: 1;
+}
+.body--perspective {
+    position: relative;
+    z-index: 1;
+}
+
+.body--transform-style {
+    position: relative;
+    z-index: 1;
+    perspective: 400px;
+    transform-style:preserve-3d;
+}
+
+.body--backface-visibility {
+    position: relative;
+
+    z-index: 1;
+    perspective: 600px;
+    
+}
+/* ++++++++++++++++++++++++++++++++++ */
+.body--translate:hover{
+    transform: translate(0px, 70px);
+    box-shadow: -5px 5px 10px rgb(17, 140, 241);
+    z-index: 10;
+}
+.body--translate:active{
+    transform: translate3d(170px, 170px, 70px);
+    box-shadow: -5px 5px 10px rgb(17, 140, 241);
+    z-index: 10;
+}
+.body--scale:hover{
+    transform: scale(0.5,0.5);
+    box-shadow: -5px 5px 4px greenyellow;
+    z-index: 10;
+}
+.body--scale:active{
+    transform: scale3d(1,1,1);
+    box-shadow: -5px 5px 4px greenyellow;
+    z-index: 10;
+}
+.body--skew:hover{
+    transform: skew(55deg, 15deg);
+    z-index: 10;
+}
+.body--rotate:hover{
+    transform: rotate(90deg);
+    box-shadow: 5px -5px 10px rgb(17, 140, 241);
+    z-index: 10;
+}
+.body--rotate:active{
+    transform: rotate3d(1,1,1, -45deg);
+    box-shadow: 5px -5px 10px rgb(17, 140, 241);
+    z-index: 10;
+}
+.body--transform-origin:active{
+    transform-origin: bottom right;
+    transform: rotate(75deg);
+    box-shadow: -5px 5px 10px rgb(17, 140, 241);
+    z-index: 10;
+}
+
+.body--perspective:active{
+    transform: rotateX(75deg);
+    box-shadow: -5px 5px 10px rgb(17, 140, 241);
+    z-index: 10;
+}
+
+.body--transform-style:hover{
+    transform: translateX(25px) rotateY(55deg) rotate(30deg);
+    box-shadow: 5px -5px 10px rgb(17, 140, 241);
+    z-index: 10;
+}
+
+.body--backface-visibility:active{
+    transform: rotateY(110deg);
+    backface-visibility: hidden;
+    box-shadow: -5px 5px 10px rgb(17, 140, 241);
+    z-index: 10;
+}
+/* ============================================= */
+.ten__romb {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border:3px solid rgb(24, 22, 22);
+    box-shadow: 2px 2px 3px gray;
+    /* transform: translate(25px,-285px) rotate(45deg); */
+    position: relative;
+}
+.romb--left {
+    transform: translate(25px,30px) rotate(45deg) skew(10deg, 10deg);
+    position: absolute;
+}
+.romb--rith {
+    transform: translate(155px,50px) rotate(45deg) skew(10deg, 10deg);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.romb--bottom-rith {
+    transform: translate(175px,275px) rotate(45deg) skew(10deg, 10deg);
+    position: absolute;
+}
+.romb--bottom-left {
+    transform: translate(30px,230px) rotate(45deg) skew(10deg, 10deg);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.romb--center {
+    transform: translate(83px,133px) rotate(45deg) skew(10deg, 10deg);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+.ten__translate,
+.ten__scale,
+.ten__rotate,
+.ten__skew,
+.ten__transform-origin,
+.ten__perspective,
+.ten__transform-style,
+.ten__backface-visibility{
+    position: absolute;
+    color: rgb(168, 73, 18);
+}
+
+.text{
+    position: absolute;   
+    display: inline-block;
+    color: rgb(243, 247, 10);
+    text-shadow: 2px 2px 2px red;
+    font-size: 35px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.text--translate{
+    transform: translate(20px);
+}
+.text--scale{
+    transform: translate(60px);
+}
+.text--rotate{
+    transform: translate(60px);
+}
+.text--transform-origin{
+    text-align: center;
+    text-transform: capitalize;
+}
+.text--perspective{
+    position: absolute;    
+    color: rgb(243, 247, 10);
+    transform: translate(10px,10px);
+}
+.text--skew{
+    color: rgb(243, 247, 10);
+    transform: translate(70px,10px);
+}
+.text--transform-style{
+    color: rgb(243, 247, 10);
+    text-align: center;
+    transform: translate(15px,0px);
+}
+.text--backface-visibility{
+    text-align: center;
+    transform: translate(15px,0px);
+
+}
+
+/* ========================== */
+
+.text-ten {
+    position: relative;
+    color: black;
+    font-size: 46px;
+    line-height: 1.5;
+    transform: translate(23px, -80px);
+    text-shadow: 2px 2px 3px rgb(214, 43, 12);
+}
+.text-ten__top {
+    transform: translate(0px, 150px) rotate(0deg);
+    position: absolute;
+
+}
+.text-ten__bottom {
+    transform: translate(150px, 290px) rotate(180deg);
+    position: absolute;
+}
+/* ==================================== */
